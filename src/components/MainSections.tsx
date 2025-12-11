@@ -101,12 +101,12 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
 
   return (
     <>
-      <section id="about" className="py-20 bg-white/50">
+      <section id="about" className="py-20 bg-gray-800/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
-            <Badge className="bg-amber-100 text-amber-900 border-0">О нас</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold">СибСервис — это</h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <Badge className="bg-amber-500/20 text-amber-400 border-0">О нас</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">СибСервис — это</h2>
+            <p className="text-xl text-gray-300 leading-relaxed">
               Компания с многолетним опытом в сфере рекламной деятельности и поставок качественных товаров.
               Мы специализируемся на продаже бытовой химии, уходовой косметики, БАДов и аксессуаров,
               а также предоставляем профессиональные услуги по диагностике организма, массажу и детоксу.
@@ -116,48 +116,48 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Icon name="Award" size={32} className="text-gray-900" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">10+ лет</h3>
-                <p className="text-gray-600">на рынке</p>
+                <h3 className="text-2xl font-bold mb-2 text-white">10+ лет</h3>
+                <p className="text-gray-300">на рынке</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-emerald-700 to-emerald-900 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Icon name="Users" size={32} className="text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">500+</h3>
-                <p className="text-gray-600">довольных клиентов</p>
+                <h3 className="text-2xl font-bold mb-2 text-white">500+</h3>
+                <p className="text-gray-300">довольных клиентов</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Icon name="Package" size={32} className="text-amber-400" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">1000+</h3>
-                <p className="text-gray-600">товаров в каталоге</p>
+                <h3 className="text-2xl font-bold mb-2 text-white">1000+</h3>
+                <p className="text-gray-300">товаров в каталоге</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="products" className="py-20">
+      <section id="products" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-emerald-100 text-emerald-900 border-0 mb-4">Каталог</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши товары</h2>
-            <p className="text-xl text-gray-600">Качественная продукция для вашего дома и здоровья</p>
+            <Badge className="bg-emerald-500/20 text-emerald-400 border-0 mb-4">Каталог</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Наши товары</h2>
+            <p className="text-xl text-gray-300">Качественная продукция для вашего дома и здоровья</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-white/80 backdrop-blur-sm animate-scale-in"
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-500/20 bg-gray-800/80 backdrop-blur-sm animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className={`w-16 h-16 bg-gradient-to-br ${product.gradient} rounded-2xl flex items-center justify-center mb-4`}>
                     <Icon name={product.icon as any} size={32} className="text-white" />
                   </div>
-                  <CardTitle className="text-xl">{product.title}</CardTitle>
-                  <CardDescription className="text-base">{product.description}</CardDescription>
+                  <CardTitle className="text-xl text-white">{product.title}</CardTitle>
+                  <CardDescription className="text-base text-gray-300">{product.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button className="w-full bg-gradient-to-r from-gray-900 to-emerald-900 hover:from-gray-800 hover:to-emerald-800 text-white">
@@ -170,26 +170,26 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-white/50">
+      <section id="services" className="py-20 bg-gray-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-emerald-100 text-emerald-900 border-0 mb-4">Услуги</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Профессиональный уход</h2>
-            <p className="text-xl text-gray-600">Доверьте своё здоровье профессионалам</p>
+            <Badge className="bg-emerald-500/20 text-emerald-400 border-0 mb-4">Услуги</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Профессиональный уход</h2>
+            <p className="text-xl text-gray-300">Доверьте своё здоровье профессионалам</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="hover:shadow-xl transition-all duration-300 border-0 bg-white animate-scale-in"
+                className="hover:shadow-xl transition-all duration-300 border border-amber-500/20 bg-gray-800/80 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-4">
                     <Icon name={service.icon as any} size={32} className="text-gray-900" />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
+                  <CardTitle className="text-2xl text-white">{service.title}</CardTitle>
+                  <CardDescription className="text-base text-gray-300">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
@@ -197,7 +197,7 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                   </div>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-gray-600">
+                      <li key={idx} className="flex items-center gap-2 text-gray-300">
                         <Icon name="Check" size={16} className="text-emerald-600" />
                         {feature}
                       </li>
@@ -250,14 +250,14 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
         </div>
       </section>
 
-      <section id="promotions" className="py-20">
+      <section id="promotions" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Badge className="bg-gradient-to-r from-amber-500 to-yellow-600 text-gray-900 border-0 mb-4">
               Выгодно
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Актуальные акции</h2>
-            <p className="text-xl text-gray-600">Специальные предложения для наших клиентов</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Актуальные акции</h2>
+            <p className="text-xl text-gray-300">Специальные предложения для наших клиентов</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {promotions.map((promo, index) => (
@@ -286,18 +286,18 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 bg-white/50">
+      <section id="reviews" className="py-20 bg-gray-800/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="bg-amber-100 text-amber-900 border-0 mb-4">Отзывы</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Что говорят клиенты</h2>
-            <p className="text-xl text-gray-600">Мы ценим каждое мнение</p>
+            <Badge className="bg-amber-500/20 text-amber-400 border-0 mb-4">Отзывы</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Что говорят клиенты</h2>
+            <p className="text-xl text-gray-300">Мы ценим каждое мнение</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
               <Card
                 key={index}
-                className="border-0 bg-white hover:shadow-xl transition-all duration-300 animate-scale-in"
+                className="border border-amber-500/20 bg-gray-800/80 hover:shadow-xl transition-all duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
@@ -310,7 +310,7 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       />
                     </div>
                     <div>
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
+                      <CardTitle className="text-lg text-white">{review.name}</CardTitle>
                       <div className="flex gap-1">
                         {[...Array(review.rating)].map((_, i) => (
                           <Icon key={i} name="Star" size={16} className="text-amber-500 fill-amber-500" />
@@ -318,7 +318,7 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       </div>
                     </div>
                   </div>
-                  <CardDescription className="text-base text-gray-700">
+                  <CardDescription className="text-base text-gray-300">
                     "{review.text}"
                   </CardDescription>
                 </CardHeader>
@@ -328,18 +328,18 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20">
+      <section id="contacts" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
-              <Badge className="bg-emerald-100 text-emerald-900 border-0 mb-4">Контакты</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
-              <p className="text-xl text-gray-600">Мы всегда рады ответить на ваши вопросы</p>
+              <Badge className="bg-emerald-500/20 text-emerald-400 border-0 mb-4">Контакты</Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Свяжитесь с нами</h2>
+              <p className="text-xl text-gray-300">Мы всегда рады ответить на ваши вопросы</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-0 bg-white/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>Контактная информация</CardTitle>
+                  <CardTitle className="text-white">Контактная информация</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -347,8 +347,8 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       <Icon name="Phone" size={20} className="text-gray-900" />
                     </div>
                     <div>
-                      <p className="font-semibold">Телефон</p>
-                      <p className="text-gray-600">+7 (999) 123-45-67</p>
+                      <p className="font-semibold text-white">Телефон</p>
+                      <p className="text-gray-300">+7 (999) 123-45-67</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -356,8 +356,8 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       <Icon name="Mail" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold">Email</p>
-                      <p className="text-gray-600">info@sibservice.ru</p>
+                      <p className="font-semibold text-white">Email</p>
+                      <p className="text-gray-300">info@sibservice.ru</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -365,8 +365,8 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       <Icon name="MapPin" size={20} className="text-amber-400" />
                     </div>
                     <div>
-                      <p className="font-semibold">Адрес</p>
-                      <p className="text-gray-600">г. Новосибирск, ул. Примерная, 123</p>
+                      <p className="font-semibold text-white">Адрес</p>
+                      <p className="text-gray-300">г. Новосибирск, ул. Примерная, 123</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -374,17 +374,17 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
                       <Icon name="Clock" size={20} className="text-gray-900" />
                     </div>
                     <div>
-                      <p className="font-semibold">Режим работы</p>
-                      <p className="text-gray-600">Пн-Пт: 9:00 - 18:00</p>
-                      <p className="text-gray-600">Сб-Вс: 10:00 - 16:00</p>
+                      <p className="font-semibold text-white">Режим работы</p>
+                      <p className="text-gray-300">Пн-Пт: 9:00 - 18:00</p>
+                      <p className="text-gray-300">Сб-Вс: 10:00 - 16:00</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-0 bg-white/80 backdrop-blur-sm">
+              <Card className="border border-amber-500/20 bg-gray-800/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle>Напишите нам</CardTitle>
-                  <CardDescription>Заполните форму обратной связи</CardDescription>
+                  <CardTitle className="text-white">Напишите нам</CardTitle>
+                  <CardDescription className="text-gray-300">Заполните форму обратной связи</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleBooking} className="space-y-4">

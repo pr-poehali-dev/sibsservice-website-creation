@@ -15,13 +15,13 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             <Badge className="bg-gradient-to-r from-amber-500 to-yellow-600 text-gray-900 border-0">
               Здоровье и красота
             </Badge>
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+            <h2 className="text-5xl md:text-6xl font-bold leading-tight text-white">
               Ваш надёжный партнёр в мире{' '}
-              <span className="bg-gradient-to-r from-amber-600 via-emerald-800 to-gray-900 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-emerald-400 bg-clip-text text-transparent">
                 здоровья и красоты
               </span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-300">
               Качественные товары для дома, косметика, БАДы и профессиональные услуги по уходу за здоровьем
             </p>
             <div className="flex gap-4">
@@ -36,7 +36,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-gray-300 hover:bg-gray-50"
+                className="border-amber-500/50 text-amber-400 hover:bg-amber-500/10"
                 onClick={() => scrollToSection('services')}
               >
                 Наши услуги
@@ -49,14 +49,14 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
               alt="Продукция СибСервис"
               className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
             />
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
+            <div className="absolute -bottom-6 -right-6 bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 max-w-xs border border-amber-500/20">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center">
                   <Icon name="Star" size={24} className="text-gray-900" />
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">500+ клиентов</p>
-                  <p className="text-sm text-gray-600">доверяют нам</p>
+                  <p className="font-bold text-white">500+ клиентов</p>
+                  <p className="text-sm text-gray-300">доверяют нам</p>
                 </div>
               </div>
             </div>
