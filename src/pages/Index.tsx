@@ -23,7 +23,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-emerald-50/20">
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
       <HeroSection scrollToSection={scrollToSection} />
       <MainSections handleBooking={handleBooking} />

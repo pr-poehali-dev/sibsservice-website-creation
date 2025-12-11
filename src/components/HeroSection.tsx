@@ -12,12 +12,12 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0">
+            <Badge className="bg-gradient-to-r from-amber-500 to-yellow-600 text-gray-900 border-0">
               Здоровье и красота
             </Badge>
             <h2 className="text-5xl md:text-6xl font-bold leading-tight">
               Ваш надёжный партнёр в мире{' '}
-              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-amber-600 via-emerald-800 to-gray-900 bg-clip-text text-transparent">
                 здоровья и красоты
               </span>
             </h2>
@@ -27,7 +27,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             <div className="flex gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
+                className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-gray-900"
                 onClick={() => scrollToSection('products')}
               >
                 Каталог товаров
@@ -36,7 +36,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-300 hover:bg-purple-50"
+                className="border-gray-300 hover:bg-gray-50"
                 onClick={() => scrollToSection('services')}
               >
                 Наши услуги
@@ -51,8 +51,8 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
             />
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-xs">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-pink-400 rounded-xl flex items-center justify-center">
-                  <Icon name="Star" size={24} className="text-white" />
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center">
+                  <Icon name="Star" size={24} className="text-gray-900" />
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">500+ клиентов</p>
