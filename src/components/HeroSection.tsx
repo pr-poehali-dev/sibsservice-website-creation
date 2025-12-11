@@ -45,7 +45,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           </div>
           <div className="relative animate-scale-in">
             <img
-              src="https://cdn.poehali.dev/projects/737297b4-a946-46e8-a82d-3ab80f2a7406/files/f1fe30c0-5306-49b9-b3bb-468775edfe21.jpg"
+              src="https://cdn.poehali.dev/projects/737297b4-a946-46e8-a82d-3ab80f2a7406/files/07ad73c9-bbbd-4cda-8126-37d5d0e7f489.jpg"
               alt="Продукция СибСервис"
               className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
             />
