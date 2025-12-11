@@ -337,7 +337,7 @@ const MainSections = ({ handleBooking }: MainSectionsProps) => {
               <p className="text-xl text-gray-300">Мы всегда рады ответить на ваши вопросы</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-0 bg-white/80 backdrop-blur-sm">
+              <Card className="border border-amber-500/20 bg-gray-800/80 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-white">Контактная информация</CardTitle>
                 </CardHeader>
